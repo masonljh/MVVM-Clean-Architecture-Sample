@@ -111,6 +111,11 @@ dependencies {
     implementation(libs.androidx.hilt.navigation.compose)
     kapt(libs.hilt.compiler)
 
+    // Retrofit2
+    implementation(libs.retrofit2)
+    implementation(libs.retrofit.converter)
+    implementation(libs.gson)
+
     // Jetpack Compose
     val composeBom = platform(libs.androidx.compose.bom)
 

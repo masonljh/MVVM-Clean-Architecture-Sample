@@ -31,6 +31,7 @@ class MainViewModel @Inject constructor(
 
     fun toggleAuto() {
         viewModelScope.launch {
+            testRepository.getList()
             while (true) {
                 delay(1000)
                 testRepository.toggleState()
